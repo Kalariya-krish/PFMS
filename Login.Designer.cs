@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.login_email = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.login_password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.login_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.login_notaMember = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,25 +52,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "FinScope";
             // 
-            // pictureBox1
+            // login_email
             // 
-            this.pictureBox1.Image = global::PFMS.Properties.Resources.f_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(133, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(65, 322);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 35);
-            this.textBox1.TabIndex = 68;
+            this.login_email.BackColor = System.Drawing.Color.White;
+            this.login_email.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_email.Location = new System.Drawing.Point(65, 322);
+            this.login_email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.login_email.Name = "login_email";
+            this.login_email.Size = new System.Drawing.Size(357, 35);
+            this.login_email.TabIndex = 68;
             // 
             // label9
             // 
@@ -79,19 +70,19 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(62, 285);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(132, 25);
+            this.label9.Size = new System.Drawing.Size(88, 25);
             this.label9.TabIndex = 67;
-            this.label9.Text = "Username :";
+            this.label9.Text = "Email :";
             // 
-            // textBox2
+            // login_password
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(67, 431);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(357, 35);
-            this.textBox2.TabIndex = 70;
+            this.login_password.BackColor = System.Drawing.Color.White;
+            this.login_password.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_password.Location = new System.Drawing.Point(67, 431);
+            this.login_password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.login_password.Name = "login_password";
+            this.login_password.Size = new System.Drawing.Size(357, 35);
+            this.login_password.TabIndex = 70;
             // 
             // label2
             // 
@@ -104,6 +95,19 @@
             this.label2.TabIndex = 69;
             this.label2.Text = "Password :";
             // 
+            // login_btn
+            // 
+            this.login_btn.BackColor = System.Drawing.Color.White;
+            this.login_btn.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
+            this.login_btn.Location = new System.Drawing.Point(158, 541);
+            this.login_btn.Name = "login_btn";
+            this.login_btn.Size = new System.Drawing.Size(188, 56);
+            this.login_btn.TabIndex = 76;
+            this.login_btn.Text = "Login";
+            this.login_btn.UseVisualStyleBackColor = false;
+            this.login_btn.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PFMS.Properties.Resources.bar_icon;
@@ -114,17 +118,27 @@
             this.pictureBox2.TabIndex = 71;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // pictureBox1
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
-            this.button1.Location = new System.Drawing.Point(158, 541);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 56);
-            this.button1.TabIndex = 76;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pictureBox1.Image = global::PFMS.Properties.Resources.f_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(133, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // login_notaMember
+            // 
+            this.login_notaMember.AutoSize = true;
+            this.login_notaMember.Font = new System.Drawing.Font("Mongolian Baiti", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_notaMember.ForeColor = System.Drawing.Color.White;
+            this.login_notaMember.Location = new System.Drawing.Point(156, 624);
+            this.login_notaMember.Name = "login_notaMember";
+            this.login_notaMember.Size = new System.Drawing.Size(195, 25);
+            this.login_notaMember.TabIndex = 97;
+            this.login_notaMember.Text = "Note a Member ?";
+            this.login_notaMember.Click += new System.EventHandler(this.login_notaMember_Click);
             // 
             // Login
             // 
@@ -132,18 +146,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(491, 691);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.login_notaMember);
+            this.Controls.Add(this.login_btn);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.login_password);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.login_email);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,11 +168,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox login_email;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox login_password;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button login_btn;
+        private System.Windows.Forms.Label login_notaMember;
     }
 }

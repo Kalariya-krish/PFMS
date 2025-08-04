@@ -368,9 +368,11 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.White;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(1255, 371);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(375, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(375, 31);
             this.dateTimePicker1.TabIndex = 73;
             this.dateTimePicker1.Value = new System.DateTime(2025, 12, 11, 0, 0, 0, 0);
             // 
