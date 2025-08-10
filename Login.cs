@@ -31,24 +31,32 @@ namespace PFMS
         {
             string email = login_email.Text.Trim();
             string password = login_password.Text.Trim();
+
             if (email == "" || password == "")
             {
                 MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             try
             {
                 con.Open();
-                string query = "SELECT COUNT(*) FROM users WHERE user_email = @email AND user_password = @password";
+                // Fetch full user record to get user_id
+                string query = "SELECT user_id FROM users WHERE user_email = @email AND user_password = @password";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@password", password);
 
-                int userCount = (int)cmd.ExecuteScalar();
+                SqlDataReader reader = cmd.ExecuteReader();
 
-                if (userCount > 0)
+                if (reader.Read())
                 {
+                    // Store user ID in global session
+                    Session.UserId = Convert.ToInt32(reader["user_id"]);
+
                     MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Open dashboard
                     Dashboard dash = new Dashboard();
                     dash.Show();
                     this.Hide();
@@ -57,6 +65,8 @@ namespace PFMS
                 {
                     MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
+                reader.Close();
             }
             catch (Exception ex)
             {
@@ -67,6 +77,7 @@ namespace PFMS
                 con.Close();
             }
         }
+
 
         private void login_notaMember_Click(object sender, EventArgs e)
         {

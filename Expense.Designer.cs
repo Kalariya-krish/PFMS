@@ -45,16 +45,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.expenseBtn = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.expenseDate = new System.Windows.Forms.DateTimePicker();
+            this.expenseCategory = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.expenseDescription = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.expenseAmount = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.expenseName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
@@ -265,17 +265,18 @@
             this.label14.Text = "Expense Details";
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // button1
+            // expenseBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1098, 705);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 56);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "Add Expense";
-            this.button1.UseVisualStyleBackColor = false;
+            this.expenseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.expenseBtn.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseBtn.ForeColor = System.Drawing.Color.White;
+            this.expenseBtn.Location = new System.Drawing.Point(1098, 705);
+            this.expenseBtn.Name = "expenseBtn";
+            this.expenseBtn.Size = new System.Drawing.Size(188, 56);
+            this.expenseBtn.TabIndex = 59;
+            this.expenseBtn.Text = "Add Expense";
+            this.expenseBtn.UseVisualStyleBackColor = false;
+            this.expenseBtn.Click += new System.EventHandler(this.expenseBtn_Click);
             // 
             // label13
             // 
@@ -288,25 +289,86 @@
             this.label13.TabIndex = 58;
             this.label13.Text = "Date :";
             // 
-            // dateTimePicker1
+            // expenseDate
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.White;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1251, 371);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(375, 26);
-            this.dateTimePicker1.TabIndex = 57;
-            this.dateTimePicker1.Value = new System.DateTime(2025, 12, 11, 0, 0, 0, 0);
+            this.expenseDate.CalendarFont = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseDate.CalendarForeColor = System.Drawing.Color.White;
+            this.expenseDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
+            this.expenseDate.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.expenseDate.Location = new System.Drawing.Point(1251, 371);
+            this.expenseDate.Name = "expenseDate";
+            this.expenseDate.Size = new System.Drawing.Size(375, 34);
+            this.expenseDate.TabIndex = 57;
+            this.expenseDate.Value = new System.DateTime(2025, 12, 11, 0, 0, 0, 0);
             // 
-            // comboBox1
+            // expenseCategory
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1251, 260);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(375, 33);
-            this.comboBox1.TabIndex = 56;
+            this.expenseCategory.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseCategory.FormattingEnabled = true;
+            this.expenseCategory.Items.AddRange(new object[] {
+            "Rent",
+            "",
+            "",
+            "Utilities",
+            "",
+            "",
+            "Internet",
+            "",
+            "",
+            "Groceries",
+            "",
+            "",
+            "Dining",
+            "",
+            "",
+            "Transport",
+            "",
+            "",
+            "Fuel",
+            "",
+            "",
+            "Medical",
+            "",
+            "",
+            "Insurance",
+            "",
+            "",
+            "Education",
+            "",
+            "",
+            "Entertainment",
+            "",
+            "",
+            "Shopping",
+            "",
+            "",
+            "Travel",
+            "",
+            "",
+            "Household",
+            "",
+            "",
+            "Loan",
+            "",
+            "",
+            "Savings",
+            "",
+            "",
+            "Gifts",
+            "",
+            "",
+            "Repairs",
+            "",
+            "",
+            "Fees",
+            "",
+            "",
+            "Other"});
+            this.expenseCategory.Location = new System.Drawing.Point(1251, 260);
+            this.expenseCategory.Name = "expenseCategory";
+            this.expenseCategory.Size = new System.Drawing.Size(375, 33);
+            this.expenseCategory.TabIndex = 56;
             // 
             // label12
             // 
@@ -319,16 +381,16 @@
             this.label12.TabIndex = 55;
             this.label12.Text = "Category :";
             // 
-            // textBox3
+            // expenseDescription
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(990, 510);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(357, 154);
-            this.textBox3.TabIndex = 54;
+            this.expenseDescription.BackColor = System.Drawing.Color.White;
+            this.expenseDescription.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseDescription.Location = new System.Drawing.Point(990, 510);
+            this.expenseDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.expenseDescription.Multiline = true;
+            this.expenseDescription.Name = "expenseDescription";
+            this.expenseDescription.Size = new System.Drawing.Size(357, 154);
+            this.expenseDescription.TabIndex = 54;
             // 
             // label11
             // 
@@ -341,15 +403,15 @@
             this.label11.TabIndex = 53;
             this.label11.Text = "Description :";
             // 
-            // textBox2
+            // expenseAmount
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(741, 369);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(357, 35);
-            this.textBox2.TabIndex = 52;
+            this.expenseAmount.BackColor = System.Drawing.Color.White;
+            this.expenseAmount.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseAmount.Location = new System.Drawing.Point(741, 369);
+            this.expenseAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.expenseAmount.Name = "expenseAmount";
+            this.expenseAmount.Size = new System.Drawing.Size(357, 35);
+            this.expenseAmount.TabIndex = 52;
             // 
             // label10
             // 
@@ -362,15 +424,15 @@
             this.label10.TabIndex = 51;
             this.label10.Text = "Amount :";
             // 
-            // textBox1
+            // expenseName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(741, 260);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 35);
-            this.textBox1.TabIndex = 50;
+            this.expenseName.BackColor = System.Drawing.Color.White;
+            this.expenseName.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseName.Location = new System.Drawing.Point(741, 260);
+            this.expenseName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.expenseName.Name = "expenseName";
+            this.expenseName.Size = new System.Drawing.Size(357, 35);
+            this.expenseName.TabIndex = 50;
             // 
             // label9
             // 
@@ -435,16 +497,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1767, 1008);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.expenseBtn);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.expenseDate);
+            this.Controls.Add(this.expenseCategory);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.expenseDescription);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.expenseAmount);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.expenseName);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel1);
@@ -488,16 +550,16 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button expenseBtn;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker expenseDate;
+        private System.Windows.Forms.ComboBox expenseCategory;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox expenseDescription;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox expenseAmount;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox expenseName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label33;

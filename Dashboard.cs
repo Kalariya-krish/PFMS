@@ -30,7 +30,7 @@ namespace PFMS
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            this.Show();
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -66,6 +66,34 @@ namespace PFMS
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void incomeLabel_Click(object sender, EventArgs e)
+        {
+            Income income = new Income();
+            income.Show();
+            this.Hide();
+        }
+
+        private void expenseLabel_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+        private void viewIncomeLabel_Click(object sender, EventArgs e)
+        {
+            ViewIncome viewIncome = new ViewIncome();
+            viewIncome.Show();
+            this.Hide();
+        }
+
+        private void viewExpenseLabel_Click(object sender, EventArgs e)
+        {
+            ViewExpense viewExpense = new ViewExpense();
+            viewExpense.Show();
+            this.Hide();
         }
     }
 }

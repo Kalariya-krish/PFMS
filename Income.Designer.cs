@@ -30,34 +30,34 @@
         {
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.viewExpenseLabel = new System.Windows.Forms.Label();
+            this.viewIncomeLabel = new System.Windows.Forms.Label();
+            this.expenseLabel = new System.Windows.Forms.Label();
+            this.incomeLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.incomeAmount = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.incomeName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.incomeDescription = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dashboardLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.income_btn = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.incomeDate = new System.Windows.Forms.DateTimePicker();
+            this.income_closebtn = new System.Windows.Forms.PictureBox();
+            this.incomeCategory = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -68,7 +68,7 @@
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.income_closebtn)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,49 +94,53 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Logout";
             // 
-            // label6
+            // viewExpenseLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(98, 572);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 25);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "View Expense";
+            this.viewExpenseLabel.AutoSize = true;
+            this.viewExpenseLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewExpenseLabel.ForeColor = System.Drawing.Color.White;
+            this.viewExpenseLabel.Location = new System.Drawing.Point(98, 572);
+            this.viewExpenseLabel.Name = "viewExpenseLabel";
+            this.viewExpenseLabel.Size = new System.Drawing.Size(163, 25);
+            this.viewExpenseLabel.TabIndex = 10;
+            this.viewExpenseLabel.Text = "View Expense";
+            this.viewExpenseLabel.Click += new System.EventHandler(this.viewExpenseLabel_Click);
             // 
-            // label5
+            // viewIncomeLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(98, 495);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 25);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "View Income";
+            this.viewIncomeLabel.AutoSize = true;
+            this.viewIncomeLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewIncomeLabel.ForeColor = System.Drawing.Color.White;
+            this.viewIncomeLabel.Location = new System.Drawing.Point(98, 495);
+            this.viewIncomeLabel.Name = "viewIncomeLabel";
+            this.viewIncomeLabel.Size = new System.Drawing.Size(152, 25);
+            this.viewIncomeLabel.TabIndex = 9;
+            this.viewIncomeLabel.Text = "View Income";
+            this.viewIncomeLabel.Click += new System.EventHandler(this.viewIncomeLabel_Click);
             // 
-            // label4
+            // expenseLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(98, 415);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Expense";
+            this.expenseLabel.AutoSize = true;
+            this.expenseLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseLabel.ForeColor = System.Drawing.Color.White;
+            this.expenseLabel.Location = new System.Drawing.Point(98, 415);
+            this.expenseLabel.Name = "expenseLabel";
+            this.expenseLabel.Size = new System.Drawing.Size(101, 25);
+            this.expenseLabel.TabIndex = 8;
+            this.expenseLabel.Text = "Expense";
+            this.expenseLabel.Click += new System.EventHandler(this.expenseLabel_Click);
             // 
-            // label3
+            // incomeLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(98, 340);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Income";
+            this.incomeLabel.AutoSize = true;
+            this.incomeLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeLabel.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.incomeLabel.Location = new System.Drawing.Point(98, 340);
+            this.incomeLabel.Name = "incomeLabel";
+            this.incomeLabel.Size = new System.Drawing.Size(90, 25);
+            this.incomeLabel.TabIndex = 4;
+            this.incomeLabel.Text = "Income";
+            this.incomeLabel.Click += new System.EventHandler(this.incomeLabel_Click);
             // 
             // label11
             // 
@@ -149,15 +153,15 @@
             this.label11.TabIndex = 69;
             this.label11.Text = "Description :";
             // 
-            // textBox2
+            // incomeAmount
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(745, 369);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(357, 35);
-            this.textBox2.TabIndex = 68;
+            this.incomeAmount.BackColor = System.Drawing.Color.White;
+            this.incomeAmount.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeAmount.Location = new System.Drawing.Point(745, 369);
+            this.incomeAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.incomeAmount.Name = "incomeAmount";
+            this.incomeAmount.Size = new System.Drawing.Size(357, 35);
+            this.incomeAmount.TabIndex = 68;
             // 
             // label10
             // 
@@ -180,15 +184,15 @@
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
             // 
-            // textBox1
+            // incomeName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(745, 260);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 35);
-            this.textBox1.TabIndex = 66;
+            this.incomeName.BackColor = System.Drawing.Color.White;
+            this.incomeName.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeName.Location = new System.Drawing.Point(745, 260);
+            this.incomeName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.incomeName.Name = "incomeName";
+            this.incomeName.Size = new System.Drawing.Size(357, 35);
+            this.incomeName.TabIndex = 66;
             // 
             // label9
             // 
@@ -241,16 +245,16 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox3
+            // incomeDescription
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(994, 510);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(357, 154);
-            this.textBox3.TabIndex = 70;
+            this.incomeDescription.BackColor = System.Drawing.Color.White;
+            this.incomeDescription.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeDescription.Location = new System.Drawing.Point(994, 510);
+            this.incomeDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.incomeDescription.Multiline = true;
+            this.incomeDescription.Name = "incomeDescription";
+            this.incomeDescription.Size = new System.Drawing.Size(357, 154);
+            this.incomeDescription.TabIndex = 70;
             // 
             // panel11
             // 
@@ -297,16 +301,17 @@
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             // 
-            // label2
+            // dashboardLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(98, 245);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 34);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Dashboard";
+            this.dashboardLabel.AutoSize = true;
+            this.dashboardLabel.Font = new System.Drawing.Font("Mongolian Baiti", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardLabel.ForeColor = System.Drawing.Color.White;
+            this.dashboardLabel.Location = new System.Drawing.Point(98, 245);
+            this.dashboardLabel.Name = "dashboardLabel";
+            this.dashboardLabel.Size = new System.Drawing.Size(162, 34);
+            this.dashboardLabel.TabIndex = 3;
+            this.dashboardLabel.Text = "Dashboard";
+            this.dashboardLabel.Click += new System.EventHandler(this.dashboardLabel_Click);
             // 
             // label1
             // 
@@ -340,17 +345,18 @@
             this.label14.TabIndex = 76;
             this.label14.Text = "Income Details";
             // 
-            // button1
+            // income_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
-            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1102, 705);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 56);
-            this.button1.TabIndex = 75;
-            this.button1.Text = "Save Income";
-            this.button1.UseVisualStyleBackColor = false;
+            this.income_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.income_btn.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.income_btn.ForeColor = System.Drawing.Color.White;
+            this.income_btn.Location = new System.Drawing.Point(1102, 705);
+            this.income_btn.Name = "income_btn";
+            this.income_btn.Size = new System.Drawing.Size(188, 56);
+            this.income_btn.TabIndex = 75;
+            this.income_btn.Text = "Save Income";
+            this.income_btn.UseVisualStyleBackColor = false;
+            this.income_btn.Click += new System.EventHandler(this.income_btn_Click);
             // 
             // label13
             // 
@@ -363,52 +369,97 @@
             this.label13.TabIndex = 74;
             this.label13.Text = "Date :";
             // 
-            // dateTimePicker1
+            // incomeDate
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.White;
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(1255, 371);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(375, 31);
-            this.dateTimePicker1.TabIndex = 73;
-            this.dateTimePicker1.Value = new System.DateTime(2025, 12, 11, 0, 0, 0, 0);
+            this.incomeDate.CalendarFont = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeDate.CalendarForeColor = System.Drawing.Color.White;
+            this.incomeDate.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
+            this.incomeDate.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.incomeDate.Location = new System.Drawing.Point(1255, 371);
+            this.incomeDate.Name = "incomeDate";
+            this.incomeDate.Size = new System.Drawing.Size(375, 31);
+            this.incomeDate.TabIndex = 73;
+            this.incomeDate.Value = new System.DateTime(2025, 12, 11, 0, 0, 0, 0);
             // 
-            // pictureBox9
+            // income_closebtn
             // 
-            this.pictureBox9.Image = global::PFMS.Properties.Resources.close_icon;
-            this.pictureBox9.Location = new System.Drawing.Point(1713, 12);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 63;
-            this.pictureBox9.TabStop = false;
+            this.income_closebtn.Image = global::PFMS.Properties.Resources.close_icon;
+            this.income_closebtn.Location = new System.Drawing.Point(1705, 12);
+            this.income_closebtn.Name = "income_closebtn";
+            this.income_closebtn.Size = new System.Drawing.Size(50, 50);
+            this.income_closebtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.income_closebtn.TabIndex = 63;
+            this.income_closebtn.TabStop = false;
+            this.income_closebtn.Click += new System.EventHandler(this.income_closebtn_Click);
             // 
-            // comboBox1
+            // incomeCategory
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1255, 260);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(375, 33);
-            this.comboBox1.TabIndex = 72;
+            this.incomeCategory.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeCategory.FormattingEnabled = true;
+            this.incomeCategory.Items.AddRange(new object[] {
+            "Salary",
+            "",
+            "",
+            "Bonus",
+            "",
+            "",
+            "Freelance",
+            "",
+            "",
+            "Business",
+            "",
+            "",
+            "Investments",
+            "",
+            "",
+            "Rent",
+            "",
+            "",
+            "Interest",
+            "",
+            "",
+            "Gift",
+            "",
+            "",
+            "Refund",
+            "",
+            "",
+            "Commission",
+            "",
+            "",
+            "Part-time",
+            "",
+            "",
+            "Dividend",
+            "",
+            "",
+            "Savings Withdrawal",
+            "",
+            "",
+            "Pension",
+            "",
+            "",
+            "Other"});
+            this.incomeCategory.Location = new System.Drawing.Point(1255, 260);
+            this.incomeCategory.Name = "incomeCategory";
+            this.incomeCategory.Size = new System.Drawing.Size(375, 33);
+            this.incomeCategory.TabIndex = 72;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.viewExpenseLabel);
+            this.panel1.Controls.Add(this.viewIncomeLabel);
+            this.panel1.Controls.Add(this.expenseLabel);
+            this.panel1.Controls.Add(this.incomeLabel);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.dashboardLabel);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -417,6 +468,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(317, 1008);
             this.panel1.TabIndex = 61;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label8
             // 
@@ -436,18 +488,18 @@
             this.ClientSize = new System.Drawing.Size(1767, 1008);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.incomeAmount);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.incomeName);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.incomeDescription);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.income_btn);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.incomeDate);
+            this.Controls.Add(this.income_closebtn);
+            this.Controls.Add(this.incomeCategory);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
             this.Name = "Income";
@@ -461,7 +513,7 @@
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.income_closebtn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -473,34 +525,34 @@
 
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label viewExpenseLabel;
+        private System.Windows.Forms.Label viewIncomeLabel;
+        private System.Windows.Forms.Label expenseLabel;
+        private System.Windows.Forms.Label incomeLabel;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox incomeAmount;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox incomeName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox incomeDescription;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dashboardLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button income_btn;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker incomeDate;
+        private System.Windows.Forms.PictureBox income_closebtn;
+        private System.Windows.Forms.ComboBox incomeCategory;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
     }

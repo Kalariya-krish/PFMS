@@ -81,6 +81,7 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="ViewExpense.cs">
       <SubType>Form</SubType>
     </Compile>
