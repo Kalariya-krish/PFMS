@@ -37,22 +37,20 @@ namespace PFMS
         private void dashboardLabel_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
-            dashboard.Show();
             this.Hide();
+            dashboard.Show();
         }
 
         private void incomeLabel_Click(object sender, EventArgs e)
         {
-            Income income = new Income();
-            income.Show();
-            this.Hide();
+            this.Show();
         }
 
         private void expenseLabel_Click(object sender, EventArgs e)
         {
             Expense expense = new Expense();
-            expense.Show();
             this.Hide();
+            expense.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -63,15 +61,15 @@ namespace PFMS
         private void viewExpenseLabel_Click(object sender, EventArgs e)
         {
             ViewExpense viewExpense = new ViewExpense();
-            viewExpense.Show();
             this.Hide();
+            viewExpense.Show();
         }
 
         private void viewIncomeLabel_Click(object sender, EventArgs e)
         {
             ViewIncome viewIncome = new ViewIncome();
-            viewIncome.Show();
             this.Hide();
+            viewIncome.Show();
         }
 
         private void income_closebtn_Click(object sender, EventArgs e)

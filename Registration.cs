@@ -28,7 +28,7 @@ namespace PFMS
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void clear_form(object sender, EventArgs e)
@@ -76,8 +76,8 @@ namespace PFMS
         private void reg_backtoLogin_Click(object sender, EventArgs e)
         {
             Login obj = new Login();
+            this.Hide();
             obj.Show();
-            this.Hide(); // Hide the registration form
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,11 @@ namespace PFMS
 {
     public partial class Dashboard : Form
     {
+        SqlConnection con = new SqlConnection(
+@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\.netprojectDB\PFMS_DB.mdf;Integrated Security=True;Connect Timeout=30");
+
+        int currentUserId = Session.UserId;
+
         public Dashboard()
         {
             InitializeComponent();
@@ -71,29 +77,34 @@ namespace PFMS
         private void incomeLabel_Click(object sender, EventArgs e)
         {
             Income income = new Income();
-            income.Show();
             this.Hide();
+            income.Show();
         }
 
         private void expenseLabel_Click(object sender, EventArgs e)
         {
             Expense expense = new Expense();
-            expense.Show();
             this.Hide();
+            expense.Show();
         }
 
         private void viewIncomeLabel_Click(object sender, EventArgs e)
         {
             ViewIncome viewIncome = new ViewIncome();
-            viewIncome.Show();
             this.Hide();
+            viewIncome.Show();
         }
 
         private void viewExpenseLabel_Click(object sender, EventArgs e)
         {
             ViewExpense viewExpense = new ViewExpense();
-            viewExpense.Show();
             this.Hide();
+            viewExpense.Show();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

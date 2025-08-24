@@ -110,5 +110,47 @@ namespace PFMS
                 con.Close();
             }
         }
+
+        private void Expense_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void expenseCloseBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dashboardLabel_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            this.Hide();
+            dashboard.Show();
+        }
+
+        private void incomeLabel_Click(object sender, EventArgs e)
+        {
+            Income income = new Income();
+            this.Hide();
+            income.Show();
+        }
+
+        private void expenseLabel_Click(object sender, EventArgs e)
+        {
+            this.Show();
+        }
+
+        private void viewIncomeLabel_Click(object sender, EventArgs e)
+        {
+            ViewIncome viewincome = new ViewIncome();
+            this.Hide();
+            viewincome.Show();
+        }
+
+        private void viewExpenseLabel_Click(object sender, EventArgs e)
+        {
+            ViewExpense viewexpense = new ViewExpense();
+            this.Hide();
+            viewexpense.Show();
+        }
     }
 }

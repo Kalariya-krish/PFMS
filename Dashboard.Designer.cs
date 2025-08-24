@@ -45,46 +45,46 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.dashIncomeDate = new System.Windows.Forms.Label();
+            this.dashIncomeTran = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.dashTotalIncome = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.dashboardClose = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.dashExpenseDate = new System.Windows.Forms.Label();
+            this.dashExpenseTran = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.dashTotalExpense = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.dashMaxIncome = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.dashMaxExpense = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.dashMinExpense = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
+            this.dashMinIncome = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
+            this.dashBestIncomeCat = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
+            this.dashLastExpense = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
+            this.dashBalance = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label33 = new System.Windows.Forms.Label();
+            this.dashLastIncome = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
+            this.dashBestExpenseCat = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -96,7 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardClose)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel4.SuspendLayout();
@@ -301,10 +301,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(74)))));
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.dashIncomeDate);
+            this.panel2.Controls.Add(this.dashIncomeTran);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.dashTotalIncome);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.ForeColor = System.Drawing.Color.White;
@@ -314,27 +314,27 @@
             this.panel2.TabIndex = 14;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label13
+            // dashIncomeDate
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(127, 194);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(112, 21);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "20/03/2025";
+            this.dashIncomeDate.AutoSize = true;
+            this.dashIncomeDate.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashIncomeDate.ForeColor = System.Drawing.Color.White;
+            this.dashIncomeDate.Location = new System.Drawing.Point(127, 194);
+            this.dashIncomeDate.Name = "dashIncomeDate";
+            this.dashIncomeDate.Size = new System.Drawing.Size(112, 21);
+            this.dashIncomeDate.TabIndex = 17;
+            this.dashIncomeDate.Text = "20/03/2025";
             // 
-            // label12
+            // dashIncomeTran
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(14, 144);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 19);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "10";
+            this.dashIncomeTran.AutoSize = true;
+            this.dashIncomeTran.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashIncomeTran.ForeColor = System.Drawing.Color.White;
+            this.dashIncomeTran.Location = new System.Drawing.Point(14, 144);
+            this.dashIncomeTran.Name = "dashIncomeTran";
+            this.dashIncomeTran.Size = new System.Drawing.Size(29, 19);
+            this.dashIncomeTran.TabIndex = 16;
+            this.dashIncomeTran.Text = "10";
             // 
             // label11
             // 
@@ -347,17 +347,17 @@
             this.label11.TabIndex = 15;
             this.label11.Text = "Transactions :";
             // 
-            // label10
+            // dashTotalIncome
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(86, 53);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 30);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "20,000";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.dashTotalIncome.AutoSize = true;
+            this.dashTotalIncome.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashTotalIncome.ForeColor = System.Drawing.Color.White;
+            this.dashTotalIncome.Location = new System.Drawing.Point(86, 53);
+            this.dashTotalIncome.Name = "dashTotalIncome";
+            this.dashTotalIncome.Size = new System.Drawing.Size(96, 30);
+            this.dashTotalIncome.TabIndex = 14;
+            this.dashTotalIncome.Text = "20,000";
+            this.dashTotalIncome.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -381,23 +381,24 @@
             this.pictureBox8.TabIndex = 13;
             this.pictureBox8.TabStop = false;
             // 
-            // pictureBox9
+            // dashboardClose
             // 
-            this.pictureBox9.Image = global::PFMS.Properties.Resources.close_icon;
-            this.pictureBox9.Location = new System.Drawing.Point(1702, 12);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 18;
-            this.pictureBox9.TabStop = false;
+            this.dashboardClose.Image = global::PFMS.Properties.Resources.close_icon;
+            this.dashboardClose.Location = new System.Drawing.Point(1702, 12);
+            this.dashboardClose.Name = "dashboardClose";
+            this.dashboardClose.Size = new System.Drawing.Size(50, 50);
+            this.dashboardClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dashboardClose.TabIndex = 18;
+            this.dashboardClose.TabStop = false;
+            this.dashboardClose.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(44)))), ((int)(((byte)(74)))));
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.dashExpenseDate);
+            this.panel3.Controls.Add(this.dashExpenseTran);
             this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.dashTotalExpense);
             this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.pictureBox10);
             this.panel3.ForeColor = System.Drawing.Color.White;
@@ -406,27 +407,27 @@
             this.panel3.Size = new System.Drawing.Size(402, 228);
             this.panel3.TabIndex = 18;
             // 
-            // label14
+            // dashExpenseDate
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(127, 194);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 21);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "20/03/2025";
+            this.dashExpenseDate.AutoSize = true;
+            this.dashExpenseDate.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashExpenseDate.ForeColor = System.Drawing.Color.White;
+            this.dashExpenseDate.Location = new System.Drawing.Point(127, 194);
+            this.dashExpenseDate.Name = "dashExpenseDate";
+            this.dashExpenseDate.Size = new System.Drawing.Size(112, 21);
+            this.dashExpenseDate.TabIndex = 17;
+            this.dashExpenseDate.Text = "20/03/2025";
             // 
-            // label15
+            // dashExpenseTran
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(14, 144);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 19);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "10";
+            this.dashExpenseTran.AutoSize = true;
+            this.dashExpenseTran.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashExpenseTran.ForeColor = System.Drawing.Color.White;
+            this.dashExpenseTran.Location = new System.Drawing.Point(14, 144);
+            this.dashExpenseTran.Name = "dashExpenseTran";
+            this.dashExpenseTran.Size = new System.Drawing.Size(29, 19);
+            this.dashExpenseTran.TabIndex = 16;
+            this.dashExpenseTran.Text = "10";
             // 
             // label16
             // 
@@ -439,16 +440,16 @@
             this.label16.TabIndex = 15;
             this.label16.Text = "Transactions :";
             // 
-            // label17
+            // dashTotalExpense
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(86, 53);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 30);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "20,000";
+            this.dashTotalExpense.AutoSize = true;
+            this.dashTotalExpense.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashTotalExpense.ForeColor = System.Drawing.Color.White;
+            this.dashTotalExpense.Location = new System.Drawing.Point(86, 53);
+            this.dashTotalExpense.Name = "dashTotalExpense";
+            this.dashTotalExpense.Size = new System.Drawing.Size(96, 30);
+            this.dashTotalExpense.TabIndex = 14;
+            this.dashTotalExpense.Text = "20,000";
             // 
             // label18
             // 
@@ -474,7 +475,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(63)))), ((int)(((byte)(114)))));
-            this.panel4.Controls.Add(this.label22);
+            this.panel4.Controls.Add(this.dashMaxIncome);
             this.panel4.Controls.Add(this.label23);
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(1000, 137);
@@ -482,16 +483,16 @@
             this.panel4.Size = new System.Drawing.Size(274, 100);
             this.panel4.TabIndex = 18;
             // 
-            // label22
+            // dashMaxIncome
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(86, 53);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(96, 30);
-            this.label22.TabIndex = 14;
-            this.label22.Text = "20,000";
+            this.dashMaxIncome.AutoSize = true;
+            this.dashMaxIncome.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashMaxIncome.ForeColor = System.Drawing.Color.White;
+            this.dashMaxIncome.Location = new System.Drawing.Point(86, 53);
+            this.dashMaxIncome.Name = "dashMaxIncome";
+            this.dashMaxIncome.Size = new System.Drawing.Size(96, 30);
+            this.dashMaxIncome.TabIndex = 14;
+            this.dashMaxIncome.Text = "20,000";
             // 
             // label23
             // 
@@ -507,7 +508,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
-            this.panel5.Controls.Add(this.label19);
+            this.panel5.Controls.Add(this.dashMaxExpense);
             this.panel5.Controls.Add(this.label20);
             this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(1000, 265);
@@ -516,16 +517,16 @@
             this.panel5.TabIndex = 19;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // label19
+            // dashMaxExpense
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(86, 53);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(96, 30);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "20,000";
+            this.dashMaxExpense.AutoSize = true;
+            this.dashMaxExpense.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashMaxExpense.ForeColor = System.Drawing.Color.White;
+            this.dashMaxExpense.Location = new System.Drawing.Point(86, 53);
+            this.dashMaxExpense.Name = "dashMaxExpense";
+            this.dashMaxExpense.Size = new System.Drawing.Size(96, 30);
+            this.dashMaxExpense.TabIndex = 14;
+            this.dashMaxExpense.Text = "20,000";
             // 
             // label20
             // 
@@ -541,7 +542,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(77)))), ((int)(((byte)(88)))));
-            this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.dashMinExpense);
             this.panel6.Controls.Add(this.label24);
             this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(1000, 566);
@@ -549,16 +550,16 @@
             this.panel6.Size = new System.Drawing.Size(274, 100);
             this.panel6.TabIndex = 21;
             // 
-            // label21
+            // dashMinExpense
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(86, 53);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(96, 30);
-            this.label21.TabIndex = 14;
-            this.label21.Text = "20,000";
+            this.dashMinExpense.AutoSize = true;
+            this.dashMinExpense.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashMinExpense.ForeColor = System.Drawing.Color.White;
+            this.dashMinExpense.Location = new System.Drawing.Point(86, 53);
+            this.dashMinExpense.Name = "dashMinExpense";
+            this.dashMinExpense.Size = new System.Drawing.Size(96, 30);
+            this.dashMinExpense.TabIndex = 14;
+            this.dashMinExpense.Text = "20,000";
             // 
             // label24
             // 
@@ -575,7 +576,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(148)))));
-            this.panel7.Controls.Add(this.label25);
+            this.panel7.Controls.Add(this.dashMinIncome);
             this.panel7.Controls.Add(this.label26);
             this.panel7.ForeColor = System.Drawing.Color.White;
             this.panel7.Location = new System.Drawing.Point(1000, 438);
@@ -583,16 +584,16 @@
             this.panel7.Size = new System.Drawing.Size(274, 100);
             this.panel7.TabIndex = 20;
             // 
-            // label25
+            // dashMinIncome
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(86, 53);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(96, 30);
-            this.label25.TabIndex = 14;
-            this.label25.Text = "20,000";
+            this.dashMinIncome.AutoSize = true;
+            this.dashMinIncome.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashMinIncome.ForeColor = System.Drawing.Color.White;
+            this.dashMinIncome.Location = new System.Drawing.Point(86, 53);
+            this.dashMinIncome.Name = "dashMinIncome";
+            this.dashMinIncome.Size = new System.Drawing.Size(96, 30);
+            this.dashMinIncome.TabIndex = 14;
+            this.dashMinIncome.Text = "20,000";
             // 
             // label26
             // 
@@ -608,7 +609,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel8.Controls.Add(this.label27);
+            this.panel8.Controls.Add(this.dashBestIncomeCat);
             this.panel8.Controls.Add(this.label28);
             this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(1379, 566);
@@ -616,16 +617,16 @@
             this.panel8.Size = new System.Drawing.Size(274, 100);
             this.panel8.TabIndex = 25;
             // 
-            // label27
+            // dashBestIncomeCat
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(12, 51);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(90, 30);
-            this.label27.TabIndex = 14;
-            this.label27.Text = "Salary";
+            this.dashBestIncomeCat.AutoSize = true;
+            this.dashBestIncomeCat.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashBestIncomeCat.ForeColor = System.Drawing.Color.White;
+            this.dashBestIncomeCat.Location = new System.Drawing.Point(12, 51);
+            this.dashBestIncomeCat.Name = "dashBestIncomeCat";
+            this.dashBestIncomeCat.Size = new System.Drawing.Size(90, 30);
+            this.dashBestIncomeCat.TabIndex = 14;
+            this.dashBestIncomeCat.Text = "Salary";
             // 
             // label28
             // 
@@ -641,7 +642,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Coral;
-            this.panel9.Controls.Add(this.label29);
+            this.panel9.Controls.Add(this.dashLastExpense);
             this.panel9.Controls.Add(this.label30);
             this.panel9.ForeColor = System.Drawing.Color.White;
             this.panel9.Location = new System.Drawing.Point(1379, 265);
@@ -649,16 +650,16 @@
             this.panel9.Size = new System.Drawing.Size(274, 100);
             this.panel9.TabIndex = 23;
             // 
-            // label29
+            // dashLastExpense
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(17, 53);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(96, 30);
-            this.label29.TabIndex = 14;
-            this.label29.Text = "20,000";
+            this.dashLastExpense.AutoSize = true;
+            this.dashLastExpense.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashLastExpense.ForeColor = System.Drawing.Color.White;
+            this.dashLastExpense.Location = new System.Drawing.Point(17, 53);
+            this.dashLastExpense.Name = "dashLastExpense";
+            this.dashLastExpense.Size = new System.Drawing.Size(96, 30);
+            this.dashLastExpense.TabIndex = 14;
+            this.dashLastExpense.Text = "20,000";
             // 
             // label30
             // 
@@ -674,7 +675,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(201)))), ((int)(((byte)(151)))));
-            this.panel10.Controls.Add(this.label31);
+            this.panel10.Controls.Add(this.dashBalance);
             this.panel10.Controls.Add(this.label32);
             this.panel10.ForeColor = System.Drawing.Color.White;
             this.panel10.Location = new System.Drawing.Point(1379, 438);
@@ -682,16 +683,16 @@
             this.panel10.Size = new System.Drawing.Size(274, 100);
             this.panel10.TabIndex = 24;
             // 
-            // label31
+            // dashBalance
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(12, 51);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(96, 30);
-            this.label31.TabIndex = 14;
-            this.label31.Text = "20,000";
+            this.dashBalance.AutoSize = true;
+            this.dashBalance.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashBalance.ForeColor = System.Drawing.Color.White;
+            this.dashBalance.Location = new System.Drawing.Point(12, 51);
+            this.dashBalance.Name = "dashBalance";
+            this.dashBalance.Size = new System.Drawing.Size(96, 30);
+            this.dashBalance.TabIndex = 14;
+            this.dashBalance.Text = "20,000";
             // 
             // label32
             // 
@@ -707,7 +708,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
-            this.panel11.Controls.Add(this.label33);
+            this.panel11.Controls.Add(this.dashLastIncome);
             this.panel11.Controls.Add(this.label34);
             this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(1379, 137);
@@ -715,16 +716,16 @@
             this.panel11.Size = new System.Drawing.Size(274, 100);
             this.panel11.TabIndex = 22;
             // 
-            // label33
+            // dashLastIncome
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(15, 53);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(96, 30);
-            this.label33.TabIndex = 14;
-            this.label33.Text = "20,000";
+            this.dashLastIncome.AutoSize = true;
+            this.dashLastIncome.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashLastIncome.ForeColor = System.Drawing.Color.White;
+            this.dashLastIncome.Location = new System.Drawing.Point(15, 53);
+            this.dashLastIncome.Name = "dashLastIncome";
+            this.dashLastIncome.Size = new System.Drawing.Size(96, 30);
+            this.dashLastIncome.TabIndex = 14;
+            this.dashLastIncome.Text = "20,000";
             // 
             // label34
             // 
@@ -741,7 +742,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel12.Controls.Add(this.label35);
+            this.panel12.Controls.Add(this.dashBestExpenseCat);
             this.panel12.Controls.Add(this.label36);
             this.panel12.ForeColor = System.Drawing.Color.White;
             this.panel12.Location = new System.Drawing.Point(1379, 697);
@@ -749,16 +750,16 @@
             this.panel12.Size = new System.Drawing.Size(274, 100);
             this.panel12.TabIndex = 26;
             // 
-            // label35
+            // dashBestExpenseCat
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(12, 51);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(60, 30);
-            this.label35.TabIndex = 14;
-            this.label35.Text = "Bill";
+            this.dashBestExpenseCat.AutoSize = true;
+            this.dashBestExpenseCat.Font = new System.Drawing.Font("Mongolian Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashBestExpenseCat.ForeColor = System.Drawing.Color.White;
+            this.dashBestExpenseCat.Location = new System.Drawing.Point(12, 51);
+            this.dashBestExpenseCat.Name = "dashBestExpenseCat";
+            this.dashBestExpenseCat.Size = new System.Drawing.Size(60, 30);
+            this.dashBestExpenseCat.TabIndex = 14;
+            this.dashBestExpenseCat.Text = "Bill";
             // 
             // label36
             // 
@@ -786,7 +787,7 @@
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.dashboardClose);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
@@ -804,7 +805,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardClose)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -852,44 +853,44 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label dashIncomeDate;
+        private System.Windows.Forms.Label dashIncomeTran;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label dashTotalIncome;
+        private System.Windows.Forms.PictureBox dashboardClose;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label dashExpenseDate;
+        private System.Windows.Forms.Label dashExpenseTran;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label dashTotalExpense;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label dashMaxIncome;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label dashMaxExpense;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label dashMinExpense;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label dashMinIncome;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label dashBestIncomeCat;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label dashLastExpense;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label dashBalance;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label dashLastIncome;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label dashBestExpenseCat;
         private System.Windows.Forms.Label label36;
     }
 }

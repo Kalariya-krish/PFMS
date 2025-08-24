@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -56,10 +57,9 @@ namespace PFMS
 
                     MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Open dashboard
                     Dashboard dash = new Dashboard();
-                    dash.Show();
                     this.Hide();
+                    dash.Show();
                 }
                 else
                 {
@@ -82,8 +82,8 @@ namespace PFMS
         private void login_notaMember_Click(object sender, EventArgs e)
         {
             Registration obj = new Registration();
-            obj.Show();
             this.Hide();
+            obj.Show();
         }
     }
 }

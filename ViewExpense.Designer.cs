@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.viewExpenseClose = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.viewExpenseLabel = new System.Windows.Forms.Label();
+            this.viewIncomeLabel = new System.Windows.Forms.Label();
+            this.expenseLabel = new System.Windows.Forms.Label();
+            this.incomeLabel = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.viewExpenseDGV = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dashboardLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -51,27 +51,28 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpenseClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpenseDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox9
+            // viewExpenseClose
             // 
-            this.pictureBox9.Image = global::PFMS.Properties.Resources.close_icon;
-            this.pictureBox9.Location = new System.Drawing.Point(1715, 12);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 80;
-            this.pictureBox9.TabStop = false;
+            this.viewExpenseClose.Image = global::PFMS.Properties.Resources.close_icon;
+            this.viewExpenseClose.Location = new System.Drawing.Point(1715, 12);
+            this.viewExpenseClose.Name = "viewExpenseClose";
+            this.viewExpenseClose.Size = new System.Drawing.Size(50, 50);
+            this.viewExpenseClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viewExpenseClose.TabIndex = 80;
+            this.viewExpenseClose.TabStop = false;
+            this.viewExpenseClose.Click += new System.EventHandler(this.viewExpenseClose_Click);
             // 
             // pictureBox7
             // 
@@ -94,49 +95,53 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Logout";
             // 
-            // label6
+            // viewExpenseLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label6.Location = new System.Drawing.Point(98, 572);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(163, 25);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "View Expense";
+            this.viewExpenseLabel.AutoSize = true;
+            this.viewExpenseLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewExpenseLabel.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.viewExpenseLabel.Location = new System.Drawing.Point(98, 572);
+            this.viewExpenseLabel.Name = "viewExpenseLabel";
+            this.viewExpenseLabel.Size = new System.Drawing.Size(163, 25);
+            this.viewExpenseLabel.TabIndex = 10;
+            this.viewExpenseLabel.Text = "View Expense";
+            this.viewExpenseLabel.Click += new System.EventHandler(this.viewExpenseLabel_Click);
             // 
-            // label5
+            // viewIncomeLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(98, 495);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 25);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "View Income";
+            this.viewIncomeLabel.AutoSize = true;
+            this.viewIncomeLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewIncomeLabel.ForeColor = System.Drawing.Color.White;
+            this.viewIncomeLabel.Location = new System.Drawing.Point(98, 495);
+            this.viewIncomeLabel.Name = "viewIncomeLabel";
+            this.viewIncomeLabel.Size = new System.Drawing.Size(152, 25);
+            this.viewIncomeLabel.TabIndex = 9;
+            this.viewIncomeLabel.Text = "View Income";
+            this.viewIncomeLabel.Click += new System.EventHandler(this.viewIncomeLabel_Click);
             // 
-            // label4
+            // expenseLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(98, 415);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Expense";
+            this.expenseLabel.AutoSize = true;
+            this.expenseLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseLabel.ForeColor = System.Drawing.Color.White;
+            this.expenseLabel.Location = new System.Drawing.Point(98, 415);
+            this.expenseLabel.Name = "expenseLabel";
+            this.expenseLabel.Size = new System.Drawing.Size(101, 25);
+            this.expenseLabel.TabIndex = 8;
+            this.expenseLabel.Text = "Expense";
+            this.expenseLabel.Click += new System.EventHandler(this.expenseLabel_Click);
             // 
-            // label3
+            // incomeLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(98, 340);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Income";
+            this.incomeLabel.AutoSize = true;
+            this.incomeLabel.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeLabel.ForeColor = System.Drawing.Color.White;
+            this.incomeLabel.Location = new System.Drawing.Point(98, 340);
+            this.incomeLabel.Name = "incomeLabel";
+            this.incomeLabel.Size = new System.Drawing.Size(90, 25);
+            this.incomeLabel.TabIndex = 4;
+            this.incomeLabel.Text = "Income";
+            this.incomeLabel.Click += new System.EventHandler(this.incomeLabel_Click);
             // 
             // pictureBox6
             // 
@@ -178,16 +183,16 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // dataGridView1
+            // viewExpenseDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(63)))), ((int)(((byte)(114)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(361, 340);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1372, 631);
-            this.dataGridView1.TabIndex = 86;
+            this.viewExpenseDGV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(63)))), ((int)(((byte)(114)))));
+            this.viewExpenseDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewExpenseDGV.Location = new System.Drawing.Point(361, 340);
+            this.viewExpenseDGV.Name = "viewExpenseDGV";
+            this.viewExpenseDGV.RowHeadersWidth = 62;
+            this.viewExpenseDGV.RowTemplate.Height = 28;
+            this.viewExpenseDGV.Size = new System.Drawing.Size(1372, 631);
+            this.viewExpenseDGV.TabIndex = 86;
             // 
             // label8
             // 
@@ -200,16 +205,17 @@
             this.label8.TabIndex = 79;
             this.label8.Text = "Personal Finance Dashboard";
             // 
-            // label2
+            // dashboardLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(98, 245);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 34);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Dashboard";
+            this.dashboardLabel.AutoSize = true;
+            this.dashboardLabel.Font = new System.Drawing.Font("Mongolian Baiti", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardLabel.ForeColor = System.Drawing.Color.White;
+            this.dashboardLabel.Location = new System.Drawing.Point(98, 245);
+            this.dashboardLabel.Name = "dashboardLabel";
+            this.dashboardLabel.Size = new System.Drawing.Size(162, 34);
+            this.dashboardLabel.TabIndex = 3;
+            this.dashboardLabel.Text = "Dashboard";
+            this.dashboardLabel.Click += new System.EventHandler(this.dashboardLabel_Click);
             // 
             // pictureBox1
             // 
@@ -252,6 +258,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(357, 35);
             this.textBox1.TabIndex = 82;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label9
             // 
@@ -269,15 +276,15 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(3)))), ((int)(((byte)(45)))));
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.viewExpenseLabel);
+            this.panel1.Controls.Add(this.viewIncomeLabel);
+            this.panel1.Controls.Add(this.expenseLabel);
+            this.panel1.Controls.Add(this.incomeLabel);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.dashboardLabel);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -286,6 +293,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(317, 1008);
             this.panel1.TabIndex = 78;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox2
             // 
@@ -324,8 +332,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1767, 1008);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.viewExpenseClose);
+            this.Controls.Add(this.viewExpenseDGV);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label12);
@@ -336,13 +344,13 @@
             this.Name = "ViewExpense";
             this.Text = "ViewExpense";
             this.Load += new System.EventHandler(this.ViewExpense_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpenseClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpenseDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -354,20 +362,20 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox viewExpenseClose;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label viewExpenseLabel;
+        private System.Windows.Forms.Label viewIncomeLabel;
+        private System.Windows.Forms.Label expenseLabel;
+        private System.Windows.Forms.Label incomeLabel;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView viewExpenseDGV;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label dashboardLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label12;
